@@ -1,0 +1,50 @@
+PListStore:[E:\Software\workspace\Repository\ActiveMQ\activemq-data\localhost\tmp_storage] started
+Using Persistence Adapter: KahaDBPersistenceAdapter[E:\Software\workspace\Repository\ActiveMQ\activemq-data\localhost\KahaDB]
+JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+KahaDB is version 6
+Recovering from the journal @1:97444
+Recovery replayed 1 operations from the journal in 0.109 seconds.
+Apache ActiveMQ 5.12.1 (localhost, ID:Marouen-PC-1869-1474590643900-0:1) is starting
+Apache ActiveMQ 5.12.1 (localhost, ID:Marouen-PC-1869-1474590643900-0:1) started
+For help or more information please see: http://activemq.apache.org
+Memory Usage for the Broker (1024 mb) is more than the maximum available for the JVM: 665 mb - resetting to 70% of maximum available: 465 mb
+Connector vm://localhost started
+*************************Début****************************
+producer-pointtopoint: envoie un message avec text=  Marouan Marouan
+consumer-pointtopoint: reception message avec text=  Marouan Marouan
+consumer-pointtopoint: message reçu
+Message reçu =  Salut Marouan Marouan!
+*************************Fin****************************
+*************************Début****************************
+producer-onlyoneconsumer: envoie un message avec text=  Nicolas Tony
+consumer1-onlyoneconsumer: reception message avec text=  Nicolas Tony
+consumer1-onlyoneconsumer: message reçu
+Message reçu =  Salut Nicolas Tony!
+*************************Fin****************************
+consumer2-onlyoneconsumer: aucun message reçu
+Message reçu =  non recu
+*************************Fin****************************
+*************************Début****************************
+producer-notimingdependencies: envoie un message avec text=  Samuel Alfred
+consumer-notimingdependencies: reception message avec text=  Samuel Alfred
+consumer-notimingdependencies: message reçu
+Message reçu =  Salut Samuel Alfred!
+*************************Fin****************************
+*************************Début****************************
+producer-acknowledgeprocessing: envoie un message avec text=  Alexis Anna
+consumer1-acknowledgeprocessing: reception message avec text=  Alexis Anna
+consumer1-acknowledgeprocessing: message non reçu
+Message reçu =  Salut Alexis Anna!
+*************************Fin****************************
+consumer2-acknowledgeprocessing: reception message avec text=  Alexis Anna
+consumer2-acknowledgeprocessing: message reçu
+Message reçu =  Salut Alexis Anna!
+*************************Fin****************************
+Connector vm://localhost stopped
+Apache ActiveMQ 5.12.1 (localhost, ID:Marouen-PC-1869-1474590643900-0:1) is shutting down
+PListStore:[E:\Software\workspace\Repository\ActiveMQ\activemq-data\localhost\tmp_storage] stopped
+Stopping async queue tasks
+Stopping async topic tasks
+Stopped KahaDB
+Apache ActiveMQ 5.12.1 (localhost, ID:Marouen-PC-1869-1474590643900-0:1) uptime 6.312 seconds
+Apache ActiveMQ 5.12.1 (localhost, ID:Marouen-PC-1869-1474590643900-0:1) is shutdown
