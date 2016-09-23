@@ -88,6 +88,7 @@ public class ConsumerTest {
         }
     }
 
+//Chaque message a un seul consommateur.
     @Test
     public void testOneConsumer() throws InterruptedException {
         try {
@@ -106,6 +107,8 @@ public class ConsumerTest {
             fail("a JMS Exception occurred");
         }
     }
+    
+    //Un émetteur et un récepteur d'un message n’ont pas de dépendances de synchronisation.
     @Test
     public void testNoDependenciesSynchro() {
         try {
@@ -125,12 +128,13 @@ public class ConsumerTest {
         }
     }
 
+//vérifie que le message n'a pas été supprimé par JMS provider dans le cas où il n'a pas été reconnu par le consommateur.
     @Test
     public void testAcknowledgeProcessing() throws InterruptedException {
         try {
             producerAcknowledgment.sendName("Alexis", "Anna");
 
-            // consume the message without an acknowledgment
+            // consommer le message sans acknowledgment
             String receiving1 = consumer1Acknowledgment.getReceiving(1000,
                     false);
             assertEquals("Salut Alexis Anna!", receiving1);
